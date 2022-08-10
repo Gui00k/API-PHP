@@ -11,9 +11,9 @@ header('Content-Type: application/json; charset=utf-8');
 
 //Credenciais do bd
 $host = @$_ENV['db_host'] ?? 'localhost';
-$name = @$_ENV['db_name'] ?? 'db_waifu';
-$user = @$_ENV['db_user'] ?? 'app';
-$pass = @$_ENV['db_pass'] ?? 'Gui84887573';
+$name = @$_ENV['db_name'] ?? 'dataname';
+$user = @$_ENV['db_user'] ?? 'user';
+$pass = @$_ENV['db_pass'] ?? 'password';
 
 //Pegando dados
 $data = json_decode(file_get_contents("php://input"), true);

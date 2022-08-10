@@ -62,9 +62,9 @@ $depositDate = date('Y/m/d H:i:s', strtotime($result['block_timestamp']));
 
 //Conectando banco de dados
 $host = @$_ENV['db_host'] ?? 'localhost';
-$name = @$_ENV['db_name'] ?? 'db_waifu';
-$user = @$_ENV['db_user'] ?? 'app';
-$pass = @$_ENV['db_pass'] ?? 'Gui84887573';
+$name = @$_ENV['db_name'] ?? 'dataname';
+$user = @$_ENV['db_user'] ?? 'user';
+$pass = @$_ENV['db_pass'] ?? 'password';
 
 //Verificando se transação já existe
 $conexaoDb = new mysqli($host,  $user, $pass, $name);

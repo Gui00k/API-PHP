@@ -20,9 +20,9 @@ if (!$address) {
 
 //Conectando banco de dados
 $host = @$_ENV['db_host'] ?? 'localhost';
-$name = @$_ENV['db_name'] ?? 'db_waifu';
-$user = @$_ENV['db_user'] ?? 'app';
-$pass = @$_ENV['db_pass'] ?? 'Gui84887573';
+$name = @$_ENV['db_name'] ?? 'dataname';
+$user = @$_ENV['db_user'] ?? 'user';
+$pass = @$_ENV['db_pass'] ?? 'password';
 
 //Validando compra
 if (false) { //aqui deve ter algum tipo de validação para a compra, corrija o mais rapido possivel(falha grave de segurança).
